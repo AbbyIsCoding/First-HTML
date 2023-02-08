@@ -5,6 +5,8 @@
     <title> Learning HTML</title>
     <! this adds a favicon image of me when I was little holding up a lego boat -->
     <link rel="icon" type="image/x-icon" href="AbbyFavicon.png"
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     
 
 </head>
@@ -17,7 +19,7 @@
        background-image: 
         linear-gradient(rgb(136, 227, 250), rgb(255, 255, 255));
 
-        )
+        
 
     }
 
@@ -72,6 +74,7 @@ style="width:300px;height:400px;">
 
   <p></p>
 
+
   <! Adding in my list! -->
     <strong style="color:blueviolet"> My shopping list</p>
     <ul>
@@ -81,8 +84,37 @@ style="width:300px;height:400px;">
   </ul>  
 
 
-<button type="button" onclick="alert('This is my fav song')">Click Me!</button>
+<h2>School Form</h2>
+
+<form action="/action_page.php">
+  <label for="fname">Class name:</label><br>
+  <input type="text" id="fname" name="fname" value=""><br>
+  <label for="lname">Teacher name:</label><br>
+  <input type="text" id="lname" name="lname" value=""><br><br>
+
+
+  
+    <label for="cars">Chose a Subject:</label>
+    <select id="subject" name="subject">
+      <option value="biology">biology</option>
+      <option value="history">history</option>
+      <option value="math">math</option>
+      <option value="art">art</option>
+      <option value="computer science">computer science</option>
+    </select>
+
+  <input type="submit" value="Submit">
+</form> 
+
+
+<button type="button" onclick="alert(Date())">Click me for the current time and date</button>
+<p> </p>
+<p> Click the music player below to hear my favorite song: Blame It On The Girls by MIKA</p>
  
+<audio controls>
+  <source src="Blame It On The Girl.mp3" type="audio/mpeg">
+  
+</audio>
 
 
 </body>
